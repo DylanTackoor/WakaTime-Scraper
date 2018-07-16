@@ -1,0 +1,84 @@
+{
+  "name": "wakatime-scraper",
+  "version": "1.0.0",
+  "description": "Stores WakaTime info into SQL db",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanTackoor/WakaTime-Scraper.git"
+  },
+  "license": "MIT",
+  "author": "Dylan Tackoor",
+  "bugs": {
+    "url": "https://github.com/DylanTackoor/WakaTime-Scraper/issues"
+  },
+  "homepage": "https://github.com/DylanTackoor/WakaTime-Scraper#readme",
+  "dependencies": {
+    "mysql": "^2.15.0",
+    "request": "^2.87.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.1.0"
+  },
+  "eslintConfig": {
+    "env": {
+      "es6": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "rules": {
+      "no-var": "error",
+      "curly": "error",
+      "no-console": 1,
+      "keyword-spacing": "error",
+      "space-before-blocks": "error",
+      "no-multiple-empty-lines": 1,
+      "space-before-function-paren": [
+        "error",
+        "never"
+      ],
+      "indent": [
+        "error",
+        2,
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "warn",
+        "always"
+      ],
+      "no-trailing-spaces": 2,
+      "no-extra-parens": 2,
+      "valid-jsdoc": 1,
+      "no-eval": 2,
+      "no-self-compare": 2,
+      "yoda": 2,
+      "arrow-body-style": 1,
+      "arrow-spacing": 2,
+      "arrow-parens": 2,
+      "eol-last": 2,
+      "brace-style": [
+        "error",
+        "1tbs",
+        {
+          "allowSingleLine": false
+        }
+      ]
+    }
+  }
+}
