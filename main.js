@@ -10,7 +10,7 @@ const connection = mysql.createConnection({
   database: process.env.MYSQL_DB   || 'Programming'
 });
 
-exports.scrapeWaka = () => {
+exports.scrapeWaka = (req, res) => {
   connection.connect((err) => {
     if (err) {
       throw err;
@@ -107,6 +107,7 @@ exports.scrapeWaka = () => {
       // TODO: wakaData.projects
 
       connection.end();
+      res.status(200).send('Done!');
     });
 
 
